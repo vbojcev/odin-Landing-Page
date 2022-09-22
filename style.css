@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+  overflow-y: scroll;
+}
+
 body {
-  height: 100vh;
+  position: absolute;
+  height: auto;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
@@ -20,7 +25,22 @@ body {
     padding-right: 15%;
 }
 
-.hero {
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero, .information, .quote-box {
     display: flex;
     background-color: #1f2937;
     justify-content: space-between;
@@ -40,30 +60,18 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: baseline;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 }
 
 .right {
     justify-content: center;
     align-items: center;
     background-color: gray;
-    height: 500px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 
-.logo {
-    font-size: 24px;
-    color: #f9faf8;
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+#mc {
+    width: 100%;
 }
 
 a, p {
@@ -79,4 +87,70 @@ button {
     text-decoration: none;
     border-radius: 10px;
     border: none;
+}
+
+.information {
+    flex-direction: column;
+    background-color: white;
+}
+
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: extra-bold;
+    text-align: justify;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20%;
+}
+
+.box {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    flex-shrink: 0;
+}
+
+.borderbox {
+    width:100px;
+    height: 75px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: #1f2937;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0;
+    display: flex;
+}
+
+.boxes p {
+    text-align: justify;
+    word-wrap: normal;
+}
+
+.boxes h3 {
+    width: 100%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.quote-box {
+    background-color: gray;
+    flex-direction: column;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+#credit {
+    text-align: right;
 }
