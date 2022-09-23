@@ -40,7 +40,7 @@ ul {
     padding: 0px;
 }
 
-.hero, .information, .quote-box {
+.hero, .information, .quote-box, .blue-box {
     display: flex;
     background-color: #1f2937;
     justify-content: space-between;
@@ -153,4 +153,36 @@ h2 {
 
 #credit {
     text-align: right;
+}
+
+.call {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.blue-box {
+    width: 100%;
+    height: 80%;
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.call button {
+    color: #3882f6;
+    font-size: 18px;
+    background-color: #e5e7eb;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer {
+    justify-content: center;
 }
